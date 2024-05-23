@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page with SVG Sidebar and Button</title>
+    <title>Page with Styled Sidebar and Button</title>
     <style>
         body {
             display: flex;
@@ -11,31 +11,63 @@
             font-family: Arial, sans-serif;
         }
         .sidebar {
-            width: 412px; /* Set the width to match the SVG width */
-        }
-        .content {
-            flex-grow: 1;
-            padding: 15px;
+            width: 412px; /* Match the width of the SVG */
+            background-color: #c59f6e; /* Use the same color as the SVG */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar svg {
+            display: none; /* Hide the SVG since the background color matches */
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
         }
         .button {
             margin-top: 20px;
             cursor: pointer;
+            text-decoration: none;
+        }
+        .button svg {
+            display: block;
+        }
+        .button text {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            fill: white;
+        }
+        .sidebar h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <div class="sidebar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="412" height="1080" viewBox="0 0 412 1080"><defs><style>.a{fill:#c59f6e;}</style></defs><path class="a" d="M0,0H412V1080H0Z"/></svg>
+        <h1>Get your Home Valuation</h1>
+        <a href="https://www.142realty.com/" class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="297" height="68" viewBox="0 0 297 68">
+                <defs><style>.a{fill:#31363c;}</style></defs>
+                <path class="a" d="M1.973,0H295.027A1.987,1.987,0,0,1,297,2V66a1.987,1.987,0,0,1-1.973,2H1.973A1.987,1.987,0,0,1,0,66V2A1.987,1.987,0,0,1,1.973,0Z"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Get your value today</text>
+            </svg>
+        </a>
     </div>
     <div class="content">
         <img src="image@2x.png" alt="Image">
-        <svg class="button" xmlns="http://www.w3.org/2000/svg" width="297" height="68" viewBox="0 0 297 68"><defs><style>.a{fill:#31363c;}</style></defs><path class="a" d="M1.973,0H295.027A1.987,1.987,0,0,1,297,2V66a1.987,1.987,0,0,1-1.973,2H1.973A1.987,1.987,0,0,1,0,66V2A1.987,1.987,0,0,1,1.973,0Z"/></svg>
     </div>
 </body>
 </html>
+
+
 
 
