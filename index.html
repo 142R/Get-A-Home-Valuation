@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page with Styled Sidebar and Button</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;700italic&display=swap" rel="stylesheet">
     <style>
         body {
             display: flex;
@@ -30,11 +31,13 @@
             align-items: center;
             justify-content: center;
             padding: 15px;
+            margin-left: 20px; /* Add space between the sidebar and the content */
         }
         .button {
             margin-top: 20px;
             cursor: pointer;
             text-decoration: none;
+            display: block;
         }
         .button svg {
             display: block;
@@ -46,27 +49,39 @@
         }
         .sidebar h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 60px;
             color: #fff;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1.2; /* Adjust line-height for spacing between lines */
+        }
+        .sidebar p {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
 <body>
     <div class="sidebar">
-        <h1>Get your Home Valuation</h1>
+        <h1>Get<br>Your<br>Maximum<br>Home Value</h1>
         <a href="https://www.142realty.com/" class="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="297" height="68" viewBox="0 0 297 68">
                 <defs><style>.a{fill:#31363c;}</style></defs>
                 <path class="a" d="M1.973,0H295.027A1.987,1.987,0,0,1,297,2V66a1.987,1.987,0,0,1-1.973,2H1.973A1.987,1.987,0,0,1,0,66V2A1.987,1.987,0,0,1,1.973,0Z"/>
-                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Get your value today</text>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Get your Valuation</text>
             </svg>
         </a>
+        <p>Check your FREE Home Valuation within your local market</p>
     </div>
     <div class="content">
         <img src="image@2x.png" alt="Image">
     </div>
 </body>
 </html>
+
 
 
 
