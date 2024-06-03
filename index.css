@@ -1,0 +1,100 @@
+.image-icon,
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.image-icon {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  background: linear-gradient(
+    90.5deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.13) 40.67%,
+    rgba(255, 255, 255, 0.7)
+  );
+  display: none;
+}
+.image-placeholder-1,
+.sidebar-icon {
+  position: absolute;
+  top: 0;
+  height: 1080px;
+}
+.image-placeholder-1 {
+  right: 0;
+  width: 668px;
+}
+.sidebar-icon {
+  left: 0;
+  width: 412px;
+}
+.get {
+  margin: 0;
+}
+.get-your-maximum-home-value {
+  position: absolute;
+  top: 106px;
+  left: 48px;
+  font-weight: 800;
+  display: inline-block;
+  width: 324px;
+}
+.button-icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.get-your-valuation {
+  position: absolute;
+  top: 23.5px;
+  left: 63.5px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: inherit;
+  -webkit-text-stroke: 1px #31363c;
+}
+.button-primary {
+  position: absolute;
+  top: 809px;
+  left: 48px;
+  width: 297px;
+  height: 68px;
+  font-size: 16px;
+  color: #c59f6e;
+}
+.check-your-free {
+  position: absolute;
+  top: 581px;
+  left: 48px;
+  font-size: 24px;
+  font-family: var(--font-montserrat);
+  display: inline-block;
+  width: 317px;
+}
+.instagram-post-a {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1080px;
+  text-align: left;
+  font-size: 64px;
+  color: var(--color-whitesmoke);
+  font-family: var(--font-open-sans);
+}

@@ -1,88 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page with Styled Sidebar and Button</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;700italic&display=swap" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .sidebar {
-            width: 412px; /* Match the width of the SVG */
-            background-color: #c59f6e; /* Use the same color as the SVG */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .sidebar svg {
-            display: none; /* Hide the SVG since the background color matches */
-        }
-        .content {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
-            margin-left: 20px; /* Add space between the sidebar and the content */
-        }
-        .button {
-            margin-top: 20px;
-            cursor: pointer;
-            text-decoration: none;
-            display: block;
-        }
-        .button svg {
-            display: block;
-        }
-        .button text {
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            fill: white;
-        }
-        .sidebar h1 {
-            margin: 0;
-            font-size: 60px;
-            color: #fff;
-            font-family: 'Lato', sans-serif;
-            font-weight: 700;
-            font-style: italic;
-            line-height: 1.2; /* Adjust line-height for spacing between lines */
-        }
-        .sidebar p {
-            margin-top: 10px;
-            font-size: 20px;
-            color: #fff;
-            font-family: 'Lato', sans-serif;
-        }
-    </style>
-</head>
-<body>
-    <div class="sidebar">
-        <h1>Get<br>Your<br>Maximum<br>Home Value</h1>
-        <a href="https://www.142realty.com/" class="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="297" height="68" viewBox="0 0 297 68">
-                <defs><style>.a{fill:#31363c;}</style></defs>
-                <path class="a" d="M1.973,0H295.027A1.987,1.987,0,0,1,297,2V66a1.987,1.987,0,0,1-1.973,2H1.973A1.987,1.987,0,0,1,0,66V2A1.987,1.987,0,0,1,1.973,0Z"/>
-                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Get your Valuation</text>
-            </svg>
-        </a>
-        <p>Check your FREE Home Valuation within your local market</p>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="instagram-post-a">
+      <div class="image-placeholder-1">
+        <img class="image-icon" alt="" src="./public/image@2x.png" />
+
+        <div class="overlay"></div>
+      </div>
+      <img class="sidebar-icon" alt="" src="./public/sidebar.svg" />
+
+      <div class="get-your-maximum-home-value">
+        <p class="get">GET</p>
+        <p class="get">YOUR</p>
+        <p class="get">MAXIMUM</p>
+        <p class="get">HOME</p>
+        <p class="get">VALUE</p>
+      </div>
+      <div class="button-primary">
+        <img class="button-icon" alt="" src="./public/button.svg" />
+
+        <a
+          class="get-your-valuation"
+          href="https://www.142realty.com"
+          target="_blank"
+          >GET YOUR VALUATION</a
+        >
+      </div>
+      <div class="check-your-free">
+        Check your FREE Home Valuation within your local market
+      </div>
     </div>
-    <div class="content">
-        <img src="image@2x.png" alt="Image">
-    </div>
-</body>
+  </body>
 </html>
-
-
-
-
-

@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+  --font-open-sans: "Open Sans";
+
+  /* Colors */
+  --color-whitesmoke: #f8f8f8;
+}
